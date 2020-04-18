@@ -1,0 +1,18 @@
+
+
+<div class="container">
+  <div class="text-center">
+    <ul class="nav justify-content-center">
+      <li class="nav-item my-5">
+        <a href="#" class="nav-link mr-4" (click)="beginnerCourse()">Beginner</a>
+      </li>
+      <li class="nav-item my-5">
+        <a href="#" class="nav-link" (click)="advancedCourse()">Advanced</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<app-course-cart-list [courses$]="courses$"></app-course-cart-list>
