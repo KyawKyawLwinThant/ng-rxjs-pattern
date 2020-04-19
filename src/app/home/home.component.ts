@@ -43,4 +43,14 @@ export class HomeComponent implements OnInit {
     this.courses$=this.advanced$;
   }
 
+
+  saveAllChanges(course:Course){
+    this.courseService.updateCourse(course.id,course)
+      .subscribe(
+        data => console.log('From Home',data),
+        error => console.log(error),
+        () => this.courses$=this.courseService.loadAllCourses()
+      )
+  }
+
 }

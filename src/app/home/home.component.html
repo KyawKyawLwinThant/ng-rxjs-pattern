@@ -15,4 +15,4 @@
 
 
 
-<app-course-cart-list [courses$]="courses$"></app-course-cart-list>
+<app-course-cart-list [courses$]="courses$" (course)="saveAllChanges($event)"></app-course-cart-list>

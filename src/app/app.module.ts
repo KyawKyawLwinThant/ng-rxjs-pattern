@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CourseCartListComponent } from './course-cart-list/course-cart-list.component';
 import {HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
