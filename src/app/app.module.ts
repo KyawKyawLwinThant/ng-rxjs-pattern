@@ -8,13 +8,15 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CourseCartListComponent } from './course-cart-list/course-cart-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavBarComponent,
-    CourseCartListComponent
+    CourseCartListComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

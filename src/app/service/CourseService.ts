@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Course} from '../model/course.model';
-import {shareReplay} from 'rxjs/operators';
+import {delay, shareReplay} from 'rxjs/operators';
 
 
 @Injectable({
@@ -15,7 +15,8 @@ export  class CourseService{
 
     loadAllCourses():Observable<Course[]>{
       return this.http.get<Course[]>('http://localhost:8080/api/courses').pipe(
-        shareReplay()
+        shareReplay(),
+        delay(1500)
       );
     }
 
