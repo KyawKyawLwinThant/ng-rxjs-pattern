@@ -9,6 +9,7 @@ import { CourseCartListComponent } from './course-cart-list/course-cart-list.com
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LoadingComponent } from './loading/loading.component';
+import { MessagesComponent } from './messges/messages.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoadingComponent } from './loading/loading.component';
     HomeComponent,
     NavBarComponent,
     CourseCartListComponent,
-    LoadingComponent
+    LoadingComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
