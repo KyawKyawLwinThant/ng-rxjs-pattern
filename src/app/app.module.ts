@@ -10,6 +10,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LoadingComponent } from './loading/loading.component';
 import { MessagesComponent } from './messges/messages.component';
+import {LoadingService} from './loading/loading.service';
+import {MessagesService} from './messges/messages.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,10 @@ import { MessagesComponent } from './messges/messages.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    LoadingService,
+    MessagesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
